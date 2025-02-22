@@ -1,0 +1,37 @@
+.carousel-inner {
+      display: flex;
+      flex-wrap: wrap;
+      transition: transform 0.5s ease-in-out;
+    }
+    .card {
+      flex: 0 0 calc(50% - 20px);
+      margin: 10px;
+      width: 90%; /* Définit une largeur fixe pour toutes les cartes */
+      height: 290px; /* Définit une hauteur fixe pour toutes les cartes */
+      display: flex;
+      align-items: center; /* Centre verticalement le contenu dans la cart*/
+      justify-content: center; /* Centre horizontalement le contenu dans la carte */
+    }
+    @media (min-width: 768px) {
+      .card {
+        flex: 0 0 calc(33.33% - 20px);
+      }
+    }
+    @media (min-width: 992px) {
+      .card {
+        flex: 0 0 calc(25% - 20px);
+      }
+    }
+
+    /* Styles pour unifier la taille des images dans les cartes */
+
+.card img {
+  max-height: 100%; /* Ajuste la hauteur maximale de l'image dans la carte */
+  object-fit: cover; /* Redimensionne l'image pour qu'elle remplisse la hauteur de la carte */
+  width: 240px;
+  position: relative;
+}
+/* Styles pour uniformiser la taille des cartes */
+
+
+
